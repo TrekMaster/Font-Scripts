@@ -30,7 +30,7 @@ Protected Class FontScripts
 		  // I've tried to stick the characters using by Apple's FontBook
 		  // Were I've no exmaple I've stuck to various paterns.
 		  //
-		  // I've used ALIF or ALIPH where supported
+		  // I've used ALIF or ALEPH where supported
 		  // I've used KA where supported
 		  // Often I've used the first consonant, which seems to fit with Apple's pattern
 		  // Where there is upper and lower case I've tended to add both except for Russian which often kerns badly.
