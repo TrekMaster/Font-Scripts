@@ -24,6 +24,17 @@ Protected Class FontScripts
 
 	#tag Method, Flags = &h0
 		Shared Function KnownScripts() As String()
+		  // Scripts are idetified from this Unicode page
+		  // https://www.unicode.org/charts/
+		  //
+		  // I've tried to stick the characters using by Apple's FontBook
+		  // Were I've no exmaple I've stuck to various paterns.
+		  //
+		  // I've used ALIF or ALIPH where supported
+		  // I've used KA where supported
+		  // Often I've used the first consonant, which seems to fit with Apple's pattern
+		  // Where there is upper and lower case I've tended to add both except for Russian which often kerns badly.
+		  
 		  // European Scripts
 		  Const Latin_A As String = "Aa"
 		  Const Armenian_Ayb As String = &u0531 + &u0561
@@ -397,14 +408,6 @@ Protected Class FontScripts
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="SizingPicture"
-			Visible=false
-			Group="Behavior"
-			InitialValue=""
-			Type="Picture"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
